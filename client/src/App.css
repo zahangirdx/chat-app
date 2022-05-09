@@ -1,11 +1,28 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: #fff;
-  color: #212121;
+  /* background: rgb(0, 0, 0); */
+  color: #000000;
   font-family: "Open Sans", sans-serif;
   display: grid;
   place-items: center;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
 }
 body {
   margin: 0%;
@@ -75,10 +92,27 @@ body {
 
 .chat-window .chat-body {
   height: calc(450px - (45px + 70px));
-  border: 1px solid #263238;
-  background: #fff;
+  /* border: 10px solid #263238; */
+  border-radius: 6px;
+  /* background: #fff; */
 
   position: relative;
+
+  background: linear-gradient(-55deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); opacity:0.4;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .chat-window .chat-body .message-container {
   width: 100%;
@@ -152,10 +186,12 @@ body {
 }
 
 .chat-window .chat-footer {
+  border-radius: 6px;
   height: 40px;
-  border: 1px solid #263238;
+  border: 3px solid #ffffff;
   border-top: none;
   display: flex;
+
 }
 
 .chat-window .chat-footer input {
@@ -177,7 +213,7 @@ body {
   cursor: pointer;
   flex: 15%;
   height: 100%;
-  background: transparent;
+  background: rgb(255, 0, 140);
   outline: none;
   font-size: 25px;
   color: lightgray;
@@ -188,4 +224,16 @@ body {
 }
 .hide {
   opacity: 0 !important;
+}
+.joinChatContainer h3 {
+  color: #fff;
+}
+.dx p {
+  color: #fff;
+}
+.xd h1{
+  color: #fff;
+}
+.xd {
+  margin-left: 5rem;
 }
